@@ -11,49 +11,36 @@ const HomePage = () => {
 
   return (
     <div id="home" className="home-page bg-[#092635]">
-      <motion.div
-        className="cursor"
-        variants={variants}
-        animate={cursorVariant}
-      />
+
       <div className=" py-5">
         <Navbar />
       </div>
-      <div className=" flex justify-center flex-col items-center lg:flex-row">
-        <div className="developer ml-10 pointer-events-none">
+      <div className="mt-6 flex w-[80%] mx-auto  justify-between flex-col items-center lg:flex-row">
+        <div className="developer ml-10 pointer-events-none w-[50%]">
           <img
             className=" object-cover h-[40vh] md:h-[60vh] developer-img "
             src={developer}
             alt="dev"
           />
         </div>
-        <div className="welcome flex md:flex-row justify-center items-center flex-col">
-          <div className=" md:mb-10">
+        <div className="welcome w-[50%] flex md:flex-row justify-center items-center flex-col">
+          <div className="flex flex-col gap-3 md:mb-10">
             <Welcome />
-          </div>
-          <div
-            onMouseEnter={textEnter}
-            onMouseLeave={textLeave}
-            className="intro_home md:mt-20"
-          >
-            <h1 className=" md:-ml-40 text-balance lg:text-7xl sm:text-6xl text-6xl max-w-xl text-[#F8FAE5] font-poiret font-extrabold text-center md:mt-0 -mt-10">
-              Web Designer &amp; Developer
-            </h1>
+            <p className=" flex items-center justify-center text-slate-400">From concept to code, turning ideas into reality. Full-stack development isn't just about crafting code; it's about shaping experiences and solving problems, bridging creativity with functionality to build a better digital world</p>
+            <button className="btn">
+              Hire me
+            </button>
           </div>
         </div>
       </div>
       <div className="headline  lg:text-5xl sm:text-4xl text-3xl text-wrap text-[#F8FAE5] font-poiret font-extrabold text-center py-10">
         <h1
-          onMouseEnter={textEnter}
-          onMouseLeave={textLeave}
           className="py-5 lg:py-10"
         >
           "Innovative <span className=" text-[#43766C]">MERN</span> Solutions
           for Your Digital Success Story"
         </h1>
         <h1
-          onMouseEnter={textEnter}
-          onMouseLeave={textLeave}
           className="py-5 lg:py-10"
         >
           "Innovate, Develop, Deliver"

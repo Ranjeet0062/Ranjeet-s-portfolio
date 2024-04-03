@@ -37,7 +37,7 @@ const TypeWriter = () => {
   }, [wordIndex, isDeleting, text]);
   return (
     <div>
-      <h1>{text}</h1>
+      <h1 className="text-red-500">{text}</h1>
     </div>
   );
 };

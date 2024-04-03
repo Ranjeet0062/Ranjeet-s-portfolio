@@ -14,11 +14,11 @@ const AboutMe = () => {
 
   return (
     <div id="about" className=" bg-[#092635]">
-      <motion.div
+      {/* <motion.div
         className="cursor"
         variants={variants}
         animate={cursorVariant}
-      />
+      /> */}
       <div className=" flex flex-col">
         <div className="heading flex justify-center items-center">
           <h1 className="text-4xl md:text-5xl font-bold p-5 text-center border-b-2 border-white max-w-xl text-white font-Montserrat">
