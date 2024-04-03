@@ -15,6 +15,7 @@ const HomePage = () => {
       <div className=" py-5">
         <Navbar />
       </div>
+      //s
       <div className="mt-6 flex w-[80%] mx-auto  justify-between flex-col items-center lg:flex-row">
         <div className="developer ml-10 pointer-events-none w-[50%]">
           <img
