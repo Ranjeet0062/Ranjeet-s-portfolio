@@ -5,18 +5,46 @@ import developer from "../assets/developer.png";
 import "../cursor.css";
 import { motion } from "framer-motion";
 import useCustomCursor from "../../components/useCustomCursor";
+import { Link } from "react-router-dom";
+import github from "../aboutMe/assets/github.svg";
+import linkedin from "../aboutMe/assets/linkedin.svg";
+import email from "../aboutMe/assets/email.svg";
+import insta from "../aboutMe/assets/Instagram.svg";
 
 const HomePage = () => {
   const { cursorVariant, variants, textEnter, textLeave } = useCustomCursor();
 
   return (
     <div id="home" className="home-page bg-[#092635]">
-
       <div className=" py-5">
         <Navbar />
       </div>
-      //s
+      <div className="social-links w-fit mt-5 rounded-2xl flex absolute right-0 ">
+          <div className="flex relative  flex-col gap-3">
+            <Link to="https://www.linkedin.com/in/jaimin-viramgama-487485233/">
+              <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
+                <img src={linkedin} alt="linkedin" />
+              </div>
+            </Link>
+            <Link to="https://github.com/jaimin1503">
+              <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
+                <img src={github} alt="github" />
+              </div>
+            </Link>
+            <Link to="https://www.instagram.com/jaimin_15.3/">
+              <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
+                <img src={insta} alt="insta" />
+              </div>
+            </Link>
+            <Link to="mailto:jaiminviramgama152@gmail.com">
+              <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
+                <img src={email} alt="email" />
+              </div>
+            </Link>
+          </div>
+        </div>
       <div className="mt-6 flex w-[80%] mx-auto  justify-between flex-col items-center lg:flex-row">
+        
         <div className="developer ml-10 pointer-events-none w-[50%]">
           <img
             className=" object-cover h-[40vh] md:h-[60vh] developer-img "
@@ -34,19 +62,20 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="headline  lg:text-5xl sm:text-4xl text-3xl text-wrap text-[#F8FAE5] font-poiret font-extrabold text-center py-10">
+      <div className="headline  lg:text-5xl sm:text-4xl text-3xl text-wrap text-[#F8FAE5]  font-bold text-center py-10">
         <h1
-          className="py-5 lg:py-10"
+          className=""
         >
-          "Innovative <span className=" text-[#43766C]">MERN</span> Solutions
-          for Your Digital Success Story"
+          "Innovative Digital   <span className=" text-[#833236]">MERN Solutions</span> for Your Digital Success Story"
         </h1>
         <h1
-          className="py-5 lg:py-10"
+          className="py-5"
         >
           "Innovate, Develop, Deliver"
         </h1>
+
       </div>
+
     </div>
   );
 };

@@ -5,6 +5,7 @@ const TypeWriter = () => {
     "Front-end Development.",
     "Back-end Development.",
     "Web-design.",
+    "Full-Stack Devlopment."
   ];
   const [wordIndex, setWordIndex] = useState(0);
   const [text, setText] = useState("");
@@ -37,7 +38,7 @@ const TypeWriter = () => {
   }, [wordIndex, isDeleting, text]);
   return (
     <div>
-      <h1 className="text-red-500">{text}</h1>
+      <h1 className="text-red-500 font-semibold">{text}</h1>
     </div>
   );
 };

@@ -3,15 +3,15 @@ import { useEffect, useState } from "react";
 import github from "./assets/github.svg";
 import link from "./assets/link.svg";
 import { Link } from "react-router-dom";
-const Project = (props) => {
-  const images = props.images;
-  const title = props.title;
-  const description = props.description;
-  const live = props.live;
-  const code = props.code;
+const Project = ({ project, index }) => {
+  const images = project.images;
+  const title = project.title;
+  const description = project.description;
+  const live = project.live;
+  const code = project.code;
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [imageSrc, setImageSrc] = useState("");
-
+  console.log("index", index)
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -35,33 +35,35 @@ const Project = (props) => {
     }
   }, [windowWidth]);
   return (
-    <div>
-      <div className="box relative w-[70vw] lg:w-[60vw] project-bg rounded-xl overflow-hidden">
-        <div className="px-10 justify-center info-bg w-full h-full info flex flex-col items-start absolute rounded-xl">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl text-red-500 font-bold">
-            {title}
-          </h1>
-          <p className="text-white text-lg md:text-xl max-w-lg py-5 leading-5 md:leading-8 font-light">
-            {description}
-          </p>
-          <div className="flex relative pt-5">
-            <Link to={code}>
-              <div className="p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
-                <img className="h-6 md:h-8" src={github} alt="github" />
-              </div>
-            </Link>
-            <Link to={live}>
-              <div className="p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
-                <img className="h-6 md:h-8" src={link} alt="github" />
-              </div>
-            </Link>
-          </div>
+    <div className="projectCard" id={`${index % 2 === 0 ? "project1" : "project2"}`} style={{ backgroundImage: `url(${imageSrc})` }}
+    >
+      <div className="projectNumber rightNumber">0{index + 1}</div>
+      <div className="projectContent leftProjectContent">
+        <div className="projectSkillsContainer">
+          <img className="projectSkill" src="./images/stack/HTML.png" alt="" />
+          <img className="projectSkill" src="./images/stack/CSS.png" alt="" />
+          <img className="projectSkill" src="./images/stack/Javascript.svg" alt="" />
+          <img className="projectSkill" src="./images/stack/Express.png" alt="" />
+          <img className="projectSkill" src="./images/stack/NextJsCircle.png" alt="" />
+          <img className="projectSkill" src="./images/stack/Tailwind.png" alt="" />
+          <img className="projectSkill" src="./images/stack/NodeJs.svg" alt="" />
+          <img className="projectSkill" src="./images/stack/MongoDB.svg" alt="" />
+          <img className="projectSkill" src="./images/stack/Redux.svg" alt="" />
+          <img className="projectSkill" src="./images/stack/Vercel.svg" alt="" />
         </div>
-        <img
-          className="h-full w-full object-contain rounded-xl object-top"
-          src={imageSrc}
-          alt="image"
-        />
+        <h2 className="projectHeading">{title}</h2>
+        <p className="projectSubHeading">
+          {description}
+        </p>
+        <div className="btnGroup">
+          <button className="btn btnProject">Read More</button>
+          <Link to={live}>
+            <i title="GitHubLink" className="fa-brands fa-github icon"></i>
+          </Link>
+          <Link to={code}>
+            <i title="Live Link" className="fa-solid fa-link icon"></i>
+          </Link>
+        </div>
       </div>
     </div>
   );
