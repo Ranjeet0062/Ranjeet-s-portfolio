@@ -51,7 +51,7 @@ const projectsData = [
     live:"https://grow-more-the-leaning-paltform.vercel.app/"
   },
   {
-    techstack: [],
+    techstack: [html,css,bootstrap,tailwind,javascript,react,redux,node,express,mongodb,git,github,vercel],
     images: [news, news_sm],
     title: "News App",
     description:
@@ -60,7 +60,7 @@ const projectsData = [
     live: "https://hunt-news.netlify.app",
   },
   {
-    techstack: [],
+    techstack: [html,css,bootstrap,tailwind,javascript,react,redux,node,express,mongodb,git,github,vercel],
     images: [otw, otw_sm],
     title: "Open to work",
     description:
