@@ -4,17 +4,36 @@ import { useInView } from "react-intersection-observer";
 import Project from "./Project";
 import insta from "./assets/insta.png";
 import insta_sm from "./assets/insta_sm.png";
-import growmore from "./assets/growmore.ong";
-import growmore_sm from "./assets/growmore_sm.png";
+import growmore from "./assets/stack/growmore.png";
+import growmore_sm from "./assets/stack/growmore_sm.png";
 import news from "./assets/news.png";
 import news_sm from "./assets/news_sm.png";
 import otw from "./assets/otw.png";
 import otw_sm from "./assets/otw_sm.png";
 import "../../fonts/Font.css";
+import bash from "./assets/stack/Bash.svg"
+import bootstrap from "./assets/stack/Bootstrap.svg"
+import chartjs from "./assets/stack/ChartJs.svg"
+import css from "./assets/stack/CSS.png"
+import doker from "./assets/stack/Docker.svg"
+import express from "./assets/stack/Express.png"
+import git from "./assets/stack/Git.svg"
+import github from "./assets/stack/Github.svg"
+import html from "./assets/stack/HTML.png"
+import javascript from "./assets/stack/Javascript.svg"
+import materialui from "./assets/stack/MaterialUI.svg"
+import next from "./assets/stack/Next.svg"
+import react from "./assets/stack/React.png"
+import redux from "./assets/stack/Redux.svg"
+import tailwind from "./assets/stack/Tailwind.png"
+import typescript from "./assets/stack/Typescript.svg"
+import vercel from "./assets/stack/Vercel.svg"
+import mongodb from "./assets/stack/MongoDB.svg"
+import node from "./assets/stack/NodeJs.svg"
 
 const projectsData = [
   {
-    techstack: [],
+    techstack: [html,css,bootstrap,tailwind,javascript,react,redux,node,express,mongodb,git,github,vercel],
     images: [insta, insta_sm],
     title: "Instagram Clone",
     code: "https://github.com/jaimin1503/rj-insta",
@@ -23,12 +42,13 @@ const projectsData = [
       "In this project me and my friend tried to make fully working Instagram clone with all the features like posting new post and liking and commenting on post.",
   },
   {
-    techstack: [],
+    techstack: [html,css,bootstrap,tailwind,javascript,react,redux,node,express,mongodb,git,github,vercel],
     images: [growmore, growmore_sm],
-    title: "Netflix Clone",
+    title: "Grow More",
     description:
       "This is my first project with backend in this I tried to make a netflix clone. I have used HTML, CSS, NodeJs, and Express.",
-    code: "https://github.com/jaimin1503/Netflix_Final",
+    code: "https://github.com/Ranjeet0062/GrowMore",
+    live:"https://grow-more-the-leaning-paltform.vercel.app/"
   },
   {
     techstack: [],

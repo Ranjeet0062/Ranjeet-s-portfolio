@@ -9,9 +9,10 @@ const Project = ({ project, index }) => {
   const description = project.description;
   const live = project.live;
   const code = project.code;
+  const stack = project.techstack
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [imageSrc, setImageSrc] = useState("");
-  console.log("index", index)
+  console.log("index", project)
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -40,7 +41,11 @@ const Project = ({ project, index }) => {
       <div className="projectNumber rightNumber">0{index + 1}</div>
       <div className="projectContent leftProjectContent">
         <div className="projectSkillsContainer">
-          <img className="projectSkill" src="./images/stack/HTML.png" alt="" />
+          {stack?.map((item) => {
+            return <img className="projectSkill" src={item} key={item} alt="" />
+
+          })}
+          {/* <img className="projectSkill" src="./images/stack/HTML.png" alt="" />
           <img className="projectSkill" src="./images/stack/CSS.png" alt="" />
           <img className="projectSkill" src="./images/stack/Javascript.svg" alt="" />
           <img className="projectSkill" src="./images/stack/Express.png" alt="" />
@@ -49,7 +54,7 @@ const Project = ({ project, index }) => {
           <img className="projectSkill" src="./images/stack/NodeJs.svg" alt="" />
           <img className="projectSkill" src="./images/stack/MongoDB.svg" alt="" />
           <img className="projectSkill" src="./images/stack/Redux.svg" alt="" />
-          <img className="projectSkill" src="./images/stack/Vercel.svg" alt="" />
+          <img className="projectSkill" src="./images/stack/Vercel.svg" alt="" /> */}
         </div>
         <h2 className="projectHeading">{title}</h2>
         <p className="projectSubHeading">
