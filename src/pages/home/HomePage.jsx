@@ -52,7 +52,7 @@ const HomePage = () => {
             alt="dev"
           />
         </div>
-        <div className="welcome w-[50%] flex md:flex-row justify-center items-center flex-col">
+        <div className="welcome w-full md:w-[50%] flex md:flex-row justify-center items-center flex-col">
           <div className="flex flex-col gap-3 md:mb-10">
             <Welcome />
             <p className=" flex items-center justify-center text-slate-400">From concept to code, turning ideas into reality. Full-stack development isn't just about crafting code; it's about shaping experiences and solving problems, bridging creativity with functionality to build a better digital world</p>
@@ -64,7 +64,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="headline  lg:text-5xl sm:text-4xl text-3xl text-wrap text-[#F8FAE5]  font-bold text-center py-10">
+      <div className="headline  lg:text-5xl sm:text-4xl text-2xl text-wrap text-[#F8FAE5]  font-bold text-center py-10">
         <h1
           className=""
         >

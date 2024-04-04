@@ -125,7 +125,7 @@
 .projectSkillsContainer {
   display: flex;
   flex-wrap: wrap;
-  max-width: 60%;
+  /* max-width: 60%; */
   gap: 1em;
 }
 

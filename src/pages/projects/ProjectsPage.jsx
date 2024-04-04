@@ -72,7 +72,7 @@ const projectsData = [
 
 const ProjectsPage = () => {
   return (
-    <div id="projects" className=" p-16">
+    <div id="projects" className="md:p-16">
       {/* <div className="container   border-2 border-dashed rounded-2xl"> */}
         <div id="projects" className="projectSection border border-dashed border-blue-600   rounded-2xl">
           <h2 className="projectTitle">Projects</h2>

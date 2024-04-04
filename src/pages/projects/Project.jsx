@@ -40,9 +40,9 @@ const Project = ({ project, index }) => {
     >
       <div className="projectNumber rightNumber">0{index + 1}</div>
       <div className="projectContent leftProjectContent">
-        <div className="projectSkillsContainer">
+        <div className="projectSkillsContainer md:max-w-[60%] w-full">
           {stack?.map((item) => {
-            return <img className="projectSkill" src={item} key={item} alt="" />
+            return <img className="md:projectSkill w-[20px]"  src={item} key={item} alt="" />
 
           })}
           {/* <img className="projectSkill" src="./images/stack/HTML.png" alt="" />
@@ -56,8 +56,8 @@ const Project = ({ project, index }) => {
           <img className="projectSkill" src="./images/stack/Redux.svg" alt="" />
           <img className="projectSkill" src="./images/stack/Vercel.svg" alt="" /> */}
         </div>
-        <h2 className="projectHeading">{title}</h2>
-        <p className="projectSubHeading">
+        <h2 className="md:projectHeading font-bold text-3xl">{title}</h2>
+        <p className="md:projectSubHeading text-[10px] font-style: italic font-semibold">
           {description}
         </p>
         <div className="btnGroup">

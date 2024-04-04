@@ -39,7 +39,7 @@ const AboutMe = () => {
             </div>
             <div className=" lg:text-xl text-xl  max-w-xl flex flex-col items-baseline  text-slate-400">
               <p>
-                Hey there! I'm Jaimin, a web
+                Hey there! I'm Ranjeet, a web
                 developer who loves creating awesome and good-looking apps. I'm
                 all about making sure they not only work great but also look
                 fantastic.
@@ -98,7 +98,7 @@ const AboutMe = () => {
               </div>
             </div>
           </div>
-          <div className="wraper">
+          <div className="wraper md:mt-0 mt-9">
             <div className="cantainer">
               <img src={ranjeet} alt="" />
             </div>
