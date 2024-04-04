@@ -60,7 +60,7 @@ const AboutMe = () => {
             </div>
             <div className=" flex flex-col mt-10">
               <div className=" links flex font-Montserrat my-5">
-              <Link to="contact" smooth={true} duration={500}>
+                <Link to="contact" smooth={true} duration={500}>
                   <button className="btn">
                     Schedule a meet
                   </button>
@@ -74,26 +74,26 @@ const AboutMe = () => {
 
               <div className="social-links w-fit mt-5 p-3 rounded-2xl">
                 <div className="flex relative ">
-                  <Link to="https://www.linkedin.com/in/odedara-ranjeet-2a3549262/"  target="_blank" >
+                  <a href="https://www.linkedin.com/in/odedara-ranjeet-2a3549262/" target="_blank" rel="noopener noreferrer">
                     <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
                       <img src={linkedin} alt="linkedin" />
                     </div>
-                  </Link>
-                  <Link to="https://github.com/Ranjeet0062" target="_blank" >
+                  </a>
+                  <a href="https://github.com/Ranjeet0062" target="_blank" rel="noopener noreferrer">
                     <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
                       <img src={github} alt="github" />
                     </div>
-                  </Link>
-                  <Link to="https://www.instagram.com/ranjeet_62.0/"  target="_blank" >
+                  </a>
+                  <a href="https://www.instagram.com/ranjeet_62.0/" target="_blank" rel="noopener noreferrer">
                     <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
                       <img src={insta} alt="insta" />
                     </div>
-                  </Link>
-                  <Link to="mailto:odedararanjeet1361@gmail.com" target="_blank">
+                  </a>
+                  <a href="mailto:odedararanjeet1361@gmail.com" target="_blank" rel="noopener noreferrer">
                     <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
                       <img src={email} alt="email" />
                     </div>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

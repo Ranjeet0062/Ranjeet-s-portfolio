@@ -24,28 +24,27 @@ const HomePage = () => {
           {/* <Link to="https://www.linkedin.com/in/odedara-ranjeet-2a3549262/" target="_blank">
 
           </Link> */}
-      
-            <a href="https://www.linkedin.com/in/odedara-ranjeet-2a3549262/" target="_blank" rel="noopener noreferrer">
-              <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
-                <img src={linkedin} alt="linkedin" />
-              </div>
-               </a>
-         
-          <Link to="https://github.com/Ranjeet0062" target="_blank">
+
+          <a href="https://www.linkedin.com/in/odedara-ranjeet-2a3549262/" target="_blank" rel="noopener noreferrer">
+            <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
+              <img src={linkedin} alt="linkedin" />
+            </div>
+          </a>
+          <a href="https://github.com/Ranjeet0062" target="_blank" rel="noopener noreferrer">
             <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
               <img src={github} alt="github" />
             </div>
-          </Link>
-          <Link to="https://www.instagram.com/ranjeet_62.0/" target="_blank">
+          </a>
+          <a href="https://www.instagram.com/ranjeet_62.0/" target="_blank" rel="noopener noreferrer">
             <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
               <img src={insta} alt="insta" />
             </div>
-          </Link>
-          <Link to="mailto:odedararanjeet1361@gmail.com" target="_blank">
+          </a>
+          <a href="mailto:odedararanjeet1361@gmail.com" target="_blank" rel="noopener noreferrer">
             <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
               <img src={email} alt="email" />
             </div>
-          </Link>
+          </a>
         </div>
       </div>
       <div className="mt-6 flex w-[80%] mx-auto  justify-between flex-col items-center lg:flex-row">
