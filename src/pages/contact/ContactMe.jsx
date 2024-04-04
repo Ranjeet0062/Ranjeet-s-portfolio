@@ -5,17 +5,17 @@ import contact from "./assets/contact.svg";
 function ContactMe() {
   const [state, handleSubmit] = useForm("mayrpgkp");
   if (state.succeeded) {
-    return <div className="bg-[#092635] flex justify-center">
+    return <div className=" flex justify-center">
       <h1 className="text-[#48b77a] text-3xl sm:text-5xl py-20">
         Your message sent!
       </h1>
     </div>
   }
   return (
-    <div id="contact" className="bg-[#092635]">
+    <div id="contact" className="">
       <div className="heading flex justify-center items-center">
         <h1 className=" text-4xl md:text-5xl font-bold p-5 mb-10 text-center border-b-2 border-white max-w-xl text-white font-Montserrat">
-          Say <span className=" text-purple-400">Hello</span> to Me!
+          Say <span className=" text-red-500">Hello</span> to Me!
         </h1>
       </div>
       <div className=" flex flex-col items-center md:flex-row md:justify-around py-10">

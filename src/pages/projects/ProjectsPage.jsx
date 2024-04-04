@@ -39,14 +39,14 @@ const projectsData = [
     code: "https://github.com/jaimin1503/rj-insta",
     live: "https://rj-insta.vercel.app",
     description:
-      "In this project me and my friend tried to make fully working Instagram clone with all the features like posting new post and liking and commenting on post.",
+      "In this project i collaborate with my friend and tried to make fully working scocial media web-application with all the features like posting new post and liking and commenting on post.",
   },
   {
     techstack: [html, css, bootstrap, tailwind, javascript, react, redux, node, express, mongodb, git, github, vercel],
     images: [growmore, growmore_sm],
     title: "Grow More",
     description:
-      "This is my first project with backend in this I tried to make a netflix clone. I have used HTML, CSS, NodeJs, and Express.",
+      "GrowMore is a fully functional ed-tech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, ExpressJS and Razorpay payment gateway",
     code: "https://github.com/Ranjeet0062/GrowMore",
     live: "https://grow-more-the-leaning-paltform.vercel.app/"
   },
@@ -72,9 +72,9 @@ const projectsData = [
 
 const ProjectsPage = () => {
   return (
-    <div id="projects" className="bg-[#09265]  p-5 ">
+    <div id="projects" className=" p-16">
       {/* <div className="container   border-2 border-dashed rounded-2xl"> */}
-        <div id="projects" className="projectSection">
+        <div id="projects" className="projectSection border border-dashed border-blue-600   rounded-2xl">
           <h2 className="projectTitle">Projects</h2>
           <div className="projectContainer">
             {projectsData.map((project, index) => (

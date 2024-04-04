@@ -2,10 +2,10 @@ import "../Styles.css";
 import TypeWriter from "../TypeWriter";
 const words = [
   "Web-designer.",
-  "Mern-Stack Devloper.",
+  "Mern-stack Devloper.",
   "Front-end Developer.",
   "Back-end Developer.",
-  "Full-Stack Devloper",
+  "Full-stack Devloper",
 ];
 const Welcome = () => {
 
