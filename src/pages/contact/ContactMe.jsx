@@ -1,20 +1,16 @@
-import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import contact from "./assets/contact.svg";
 
-const ContactMe = () => {
-  const [state, handleSubmit] = useForm("mayrnnrj");
-
+function ContactMe() {
+  const [state, handleSubmit] = useForm("mayrpgkp");
   if (state.succeeded) {
-    return (
-      <div className="bg-[#092635] flex justify-center">
-        <h1 className="text-[#48b77a] text-3xl sm:text-5xl py-20">
-          Your message sent!
-        </h1>
-      </div>
-    );
+    return <div className="bg-[#092635] flex justify-center">
+      <h1 className="text-[#48b77a] text-3xl sm:text-5xl py-20">
+        Your message sent!
+      </h1>
+    </div>
   }
-
   return (
     <div id="contact" className="bg-[#092635]">
       <div className="heading flex justify-center items-center">
@@ -58,7 +54,7 @@ const ContactMe = () => {
               name="message"
               rows={4}
               className="mt-1 p-2 my-5 w-full border border-gray-300 rounded-md outline-none"
-              defaultValue={"Hello Jaimin! 👋"}
+              defaultValue={"Hello Ranjeet! 👋"}
               required
             />
             <ValidationError
@@ -81,6 +77,6 @@ const ContactMe = () => {
       </div>
     </div>
   );
-};
+}
 
 export default ContactMe;

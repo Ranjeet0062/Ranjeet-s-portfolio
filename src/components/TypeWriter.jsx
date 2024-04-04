@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-const TypeWriter = () => {
-  const words = [
-    "Front-end Development.",
-    "Back-end Development.",
-    "Web-design.",
-    "Full-Stack Devlopment."
-  ];
+const TypeWriter = ({words}) => {
+ 
   const [wordIndex, setWordIndex] = useState(0);
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);

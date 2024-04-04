@@ -11,7 +11,13 @@ import TypeWriter from "../../components/TypeWriter";
 
 const AboutMe = () => {
   const { cursorVariant, variants, textEnter, textLeave } = useCustomCursor();
-
+  const words = [
+    "Web-design.",
+    "Mern-stack Devlopment.",
+    "Front-end Development.",
+    "Back-end Development.",
+    "Full-stack Devlopment",
+  ];
   return (
     <div id="about" className=" bg-[#17461]">
       <div className=" flex flex-col">
@@ -28,7 +34,7 @@ const AboutMe = () => {
             <div className=" sm:text-4xl text-2xl  py-5 text-[#dce1e0] font-bold flex overflow-hidden">
               <h1 className=" pr-2 md:pr-4">I do</h1>{" "}
               <div className="">
-                <TypeWriter />
+                <TypeWriter words={words} />
               </div>
             </div>
             <div className=" lg:text-xl text-xl  max-w-xl flex flex-col items-baseline  text-slate-400">
@@ -67,23 +73,23 @@ const AboutMe = () => {
               </div>
 
               <div className="social-links w-fit mt-5 p-3 rounded-2xl">
-                <div className="flex relative">
-                  <Link to="https://www.linkedin.com/in/jaimin-viramgama-487485233/">
+                <div className="flex relative ">
+                  <Link to="https://www.linkedin.com/in/odedara-ranjeet-2a3549262/"  target="_blank" >
                     <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
                       <img src={linkedin} alt="linkedin" />
                     </div>
                   </Link>
-                  <Link to="https://github.com/jaimin1503">
+                  <Link to="https://github.com/Ranjeet0062" target="_blank" >
                     <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
                       <img src={github} alt="github" />
                     </div>
                   </Link>
-                  <Link to="https://www.instagram.com/jaimin_15.3/">
+                  <Link to="https://www.instagram.com/ranjeet_62.0/"  target="_blank" >
                     <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
                       <img src={insta} alt="insta" />
                     </div>
                   </Link>
-                  <Link to="mailto:jaiminviramgama152@gmail.com">
+                  <Link to="mailto:odedararanjeet1361@gmail.com" target="_blank">
                     <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
                       <img src={email} alt="email" />
                     </div>
@@ -94,7 +100,7 @@ const AboutMe = () => {
           </div>
           <div className="wraper">
             <div className="cantainer">
-              <img src={ranjeet} alt=""/>
+              <img src={ranjeet} alt="" />
             </div>
           </div>
         </div>

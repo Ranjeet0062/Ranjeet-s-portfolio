@@ -33,7 +33,7 @@ import node from "./assets/stack/NodeJs.svg"
 
 const projectsData = [
   {
-    techstack: [html,css,bootstrap,tailwind,javascript,react,redux,node,express,mongodb,git,github,vercel],
+    techstack: [html, css, bootstrap, tailwind, javascript, react, redux, node, express, mongodb, git, github, vercel],
     images: [insta, insta_sm],
     title: "Instagram Clone",
     code: "https://github.com/jaimin1503/rj-insta",
@@ -42,16 +42,16 @@ const projectsData = [
       "In this project me and my friend tried to make fully working Instagram clone with all the features like posting new post and liking and commenting on post.",
   },
   {
-    techstack: [html,css,bootstrap,tailwind,javascript,react,redux,node,express,mongodb,git,github,vercel],
+    techstack: [html, css, bootstrap, tailwind, javascript, react, redux, node, express, mongodb, git, github, vercel],
     images: [growmore, growmore_sm],
     title: "Grow More",
     description:
       "This is my first project with backend in this I tried to make a netflix clone. I have used HTML, CSS, NodeJs, and Express.",
     code: "https://github.com/Ranjeet0062/GrowMore",
-    live:"https://grow-more-the-leaning-paltform.vercel.app/"
+    live: "https://grow-more-the-leaning-paltform.vercel.app/"
   },
   {
-    techstack: [html,css,bootstrap,tailwind,javascript,react,redux,node,express,mongodb,git,github,vercel],
+    techstack: [html, css, bootstrap, tailwind, javascript, react, redux, node, express, mongodb, git, github, vercel],
     images: [news, news_sm],
     title: "News App",
     description:
@@ -60,7 +60,7 @@ const projectsData = [
     live: "https://hunt-news.netlify.app",
   },
   {
-    techstack: [html,css,bootstrap,tailwind,javascript,react,redux,node,express,mongodb,git,github,vercel],
+    techstack: [html, css, bootstrap, tailwind, javascript, react, redux, node, express, mongodb, git, github, vercel],
     images: [otw, otw_sm],
     title: "Open to work",
     description:
@@ -72,13 +72,8 @@ const projectsData = [
 
 const ProjectsPage = () => {
   return (
-    <div id="projects" className="bg-[#09265] flex justify-center p-5 ">
-      <div className="container   border-2 border-dashed rounded-2xl">
-        {/* <div className="heading flex justify-center items-center">
-          <h1 className="text-4xl md:text-5xl font-bold p-5 mb-10 text-center border-b-2 border-white max-w-xl text-white font-Montserrat">
-            My <span className="text-purple-400">Projects</span>
-          </h1>
-        </div> */}
+    <div id="projects" className="bg-[#09265]  p-5 ">
+      {/* <div className="container   border-2 border-dashed rounded-2xl"> */}
         <div id="projects" className="projectSection">
           <h2 className="projectTitle">Projects</h2>
           <div className="projectContainer">
@@ -86,9 +81,8 @@ const ProjectsPage = () => {
               <AnimateProject key={index} project={project} index={index} />
             ))}
           </div>
-
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };

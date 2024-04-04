@@ -21,22 +21,22 @@ const HomePage = () => {
       </div>
       <div className="social-links w-fit mt-5 rounded-2xl flex absolute right-0 ">
           <div className="flex relative  flex-col gap-3">
-            <Link to="https://www.linkedin.com/in/jaimin-viramgama-487485233/">
+            <Link to="https://www.linkedin.com/in/odedara-ranjeet-2a3549262/" target="_blank">
               <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
                 <img src={linkedin} alt="linkedin" />
               </div>
             </Link>
-            <Link to="https://github.com/jaimin1503">
+            <Link to="https://github.com/Ranjeet0062" target="_blank">
               <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
                 <img src={github} alt="github" />
               </div>
             </Link>
-            <Link to="https://www.instagram.com/jaimin_15.3/">
+            <Link to="https://www.instagram.com/ranjeet_62.0/" target="_blank">
               <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
                 <img src={insta} alt="insta" />
               </div>
             </Link>
-            <Link to="mailto:jaiminviramgama152@gmail.com">
+            <Link to="mailto:odedararanjeet1361@gmail.com" target="_blank">
               <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
                 <img src={email} alt="email" />
               </div>
@@ -66,7 +66,7 @@ const HomePage = () => {
         <h1
           className=""
         >
-          "Innovative Digital   <span className=" text-[#833236]">MERN Solutions</span> for Your Digital Success Story"
+          "Innovative Digital   <span className=" text-red-500">MERN Solutions</span> for Your Digital Success Story"
         </h1>
         <h1
           className="py-5"
