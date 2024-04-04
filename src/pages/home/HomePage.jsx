@@ -21,10 +21,15 @@ const HomePage = () => {
       </div>
       <div className="social-links w-fit mt-5 rounded-2xl flex absolute right-0 ">
         <div className="flex relative  flex-col gap-3">
-          <Link to="https://www.linkedin.com/in/odedara-ranjeet-2a3549262/" target="_blank">
-            <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
-              <img src={linkedin} alt="linkedin" />
-            </div>
+          {/* <Link to="https://www.linkedin.com/in/odedara-ranjeet-2a3549262/" target="_blank">
+
+          </Link> */}
+          <Link to="/">
+            <a href="https://www.linkedin.com/in/odedara-ranjeet-2a3549262/" target="_blank" rel="noopener noreferrer">
+              <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
+                <img src={linkedin} alt="linkedin" />
+              </div>
+               </a>
           </Link>
           <Link to="https://github.com/Ranjeet0062" target="_blank">
             <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
