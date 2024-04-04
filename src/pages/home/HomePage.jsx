@@ -5,7 +5,7 @@ import developer from "../assets/developer.png";
 import "../cursor.css";
 import { motion } from "framer-motion";
 import useCustomCursor from "../../components/useCustomCursor";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import github from "../aboutMe/assets/github.svg";
 import linkedin from "../aboutMe/assets/linkedin.svg";
 import email from "../aboutMe/assets/email.svg";
@@ -56,9 +56,11 @@ const HomePage = () => {
           <div className="flex flex-col gap-3 md:mb-10">
             <Welcome />
             <p className=" flex items-center justify-center text-slate-400">From concept to code, turning ideas into reality. Full-stack development isn't just about crafting code; it's about shaping experiences and solving problems, bridging creativity with functionality to build a better digital world</p>
-            <button className="btn">
-              Hire me
-            </button>
+            <Link to="contact" smooth={true} duration={500}>
+              <button className="btn">
+                Hire me
+              </button>
+            </Link>
           </div>
         </div>
       </div>

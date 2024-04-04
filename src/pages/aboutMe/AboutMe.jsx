@@ -1,7 +1,7 @@
 import "../../components/Styles.css";
 import insta from "./assets/Instagram.svg";
 import ranjeet from "./assets/ranjeet.jpg";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import github from "./assets/github.svg";
 import linkedin from "./assets/linkedin.svg";
 import email from "./assets/email.svg";
@@ -60,7 +60,7 @@ const AboutMe = () => {
             </div>
             <div className=" flex flex-col mt-10">
               <div className=" links flex font-Montserrat my-5">
-                <Link to="https://calendly.com/jaiminv153/30min">
+              <Link to="contact" smooth={true} duration={500}>
                   <button className="btn">
                     Schedule a meet
                   </button>
