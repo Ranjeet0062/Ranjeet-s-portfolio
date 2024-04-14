@@ -1,6 +1,6 @@
 import "../../components/Styles.css";
 import insta from "./assets/Instagram.svg";
-import ranjeet from "./assets/ranjeet.jpg";
+import ranjeet from "./assets/20230901_133233.png";
 import { Link } from "react-scroll";
 import github from "./assets/github.svg";
 import linkedin from "./assets/linkedin.svg";
