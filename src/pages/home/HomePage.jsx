@@ -3,7 +3,6 @@ import Welcome from "../../components/homepage/Welcome";
 import "../../components/Styles.css";
 import developer from "../assets/developer.png";
 import "../cursor.css";
-import { motion } from "framer-motion";
 import useCustomCursor from "../../components/useCustomCursor";
 import { Link } from "react-scroll";
 import github from "../aboutMe/assets/github.svg";
