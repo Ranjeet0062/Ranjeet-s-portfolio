@@ -66,13 +66,13 @@ const AboutMe = () => {
                     Schedule a meet
                   </button>
                 </Link>
-                {/* <NavLink to="/resume" smooth={true} duration={500}> */}
+                <NavLink to="/resume" smooth={true} duration={500}>
                   <button
                     className=" py-2 px-5 text-lg font-bold text-[#9EC8B9] resume-lin"
                   >
                     Resume&#8594;
                   </button>
-                {/* </NavLink> */}
+                </NavLink>
               </div>
               <div className="social-links w-fit mt-5 p-3 rounded-2xl">
                 <div className="flex relative ">
