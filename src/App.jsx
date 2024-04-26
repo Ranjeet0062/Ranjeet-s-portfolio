@@ -6,7 +6,7 @@
 // import ContactMe from "./pages/contact/ContactMe";
 import { Route, Routes} from "react-router-dom";
 import MainPage from "./pages/MainPage";
-import Resume from "./pages/resume/Resume"
+import Resume from "./pages/resume/Resume.jsx"
 function App() {
   return (
     <div className="" style={{ backgroundColor: 'rgb(20, 20, 32)' }}>
