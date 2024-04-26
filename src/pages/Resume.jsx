@@ -1,5 +1,5 @@
 import React from 'react'
-import Resume from "./assets"
+import Resume from "./assets/resume.png"
 import PDF from "./assets/RanjeetResume.pdf"
 function resume() {
   const onButtonClick = () => {
