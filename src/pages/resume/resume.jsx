@@ -17,7 +17,7 @@ function resume() {
         <div className='flex justify-center items-center shadow-slate-300 shadow-xl mt-3'>
           <img src={Resume} alt="" loading='lazy' className='h-[90vh]' />
         </div>
-        <button onClick={onButtonClick} className='btn'>
+        <button onClick={onButtonClick} className='btn download'>
           Download PDF
         </button>
       </div>
