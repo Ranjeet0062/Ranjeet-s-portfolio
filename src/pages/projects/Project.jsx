@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import github from "./assets/github.svg";
 import link from "./assets/link.svg";
 import { FaGithub } from "react-icons/fa";
+import { FaLink } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const Project = ({ project, index }) => {
   const images = project.images;
@@ -54,12 +55,10 @@ const Project = ({ project, index }) => {
         </p>
         <div className="btnGroup">
           <button className="btn btnProject">Read More</button>
-          <Link to={live}>
-            {/* <i title="GitHubLink" className="fa-brands fa-github icon"></i> */}
-            
+          <Link to={live} style={{width:"50px"}}>
+            <FaLink />
           </Link>
           <Link to={code}>
-            {/* <i title="Live Link" className="fa-solid fa-link icon"></i> */}
             <FaGithub/>
           </Link>
         </div>
