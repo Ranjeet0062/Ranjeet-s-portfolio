@@ -1,6 +1,6 @@
 import React from 'react'
-import Resume from "../assets/resume.png"
-import PDF from "../assets/RanjeetResume.pdf"
+import Resume from "./assets"
+import PDF from "./assets/RanjeetResume.pdf"
 function resume() {
   const onButtonClick = () => {
     const pdfUrl = PDF;
