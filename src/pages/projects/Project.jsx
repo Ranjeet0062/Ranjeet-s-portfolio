@@ -44,7 +44,7 @@ const Project = ({ project, index }) => {
       <div className="projectContent leftProjectContent">
         <div className="projectSkillsContainer md:max-w-[60%] w-full">
           {stack?.map((item) => {
-            return <img className="md:projectSkill w-[20px]"  src={item} key={item} alt="" />
+            return <img className="md:projectSkill w-[20px]"  src={item} key={item} alt="" loading='lazy'/>
 
           })}
           
@@ -55,7 +55,7 @@ const Project = ({ project, index }) => {
         </p>
         <div className="btnGroup">
           <button className="btn btnProject">Read More</button>
-          <Link to={live} style={{width:"50px"}}>
+          <Link to={live} >
             <FaLink />
           </Link>
           <Link to={code}>

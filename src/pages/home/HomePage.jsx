@@ -26,22 +26,22 @@ const HomePage = () => {
 
           <a href="https://www.linkedin.com/in/odedara-ranjeet-2a3549262/" target="_blank" rel="noopener noreferrer">
             <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
-              <img src={linkedin} alt="linkedin" />
+              <img src={linkedin} alt="linkedin" loading='lazy'/>
             </div>
           </a>
           <a href="https://github.com/Ranjeet0062" target="_blank" rel="noopener noreferrer">
             <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
-              <img src={github} alt="github" />
+              <img src={github} alt="github" loading='lazy'/>
             </div>
           </a>
           <a href="https://www.instagram.com/ranjeet_62.0/" target="_blank" rel="noopener noreferrer">
             <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
-              <img src={insta} alt="insta" />
+              <img src={insta} alt="insta" loading='lazy'/>
             </div>
           </a>
           <a href="mailto:odedararanjeet1361@gmail.com" target="_blank" rel="noopener noreferrer">
             <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
-              <img src={email} alt="email" />
+              <img src={email} alt="email" loading='lazy'/>
             </div>
           </a>
         </div>
@@ -53,6 +53,7 @@ const HomePage = () => {
             className=" object-cover h-[40vh] md:h-[60vh] developer-img "
             src={developer}
             alt="dev"
+            loading='lazy'
           />
         </div>
         <div className="welcome w-full md:w-[50%] flex md:flex-row justify-center items-center flex-col">

@@ -20,7 +20,7 @@ function ContactMe() {
       </div>
       <div className=" flex flex-col items-center md:flex-row md:justify-around py-10">
         <div className="image">
-          <img className=" h-[40vh] lg:h-[60vh]" src={contact} alt="img" />
+          <img className=" h-[40vh] lg:h-[60vh]" src={contact} alt="img" loading='lazy' />
         </div>
         <div className="max-w-lg md:max-w-sm lg:max-w-lg pt-8 border-2 rounded-3xl m-5 md:m-0 border-[#9ec8b9]">
           <form

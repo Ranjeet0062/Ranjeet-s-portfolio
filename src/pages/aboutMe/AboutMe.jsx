@@ -8,6 +8,7 @@ import email from "./assets/email.svg";
 import { motion } from "framer-motion";
 import useCustomCursor from "../../components/useCustomCursor";
 import TypeWriter from "../../components/TypeWriter";
+import { NavLink } from "react-router-dom";
 
 const AboutMe = () => {
   const { cursorVariant, variants, textEnter, textLeave } = useCustomCursor();
@@ -65,33 +66,34 @@ const AboutMe = () => {
                     Schedule a meet
                   </button>
                 </Link>
-                <button
-                  className=" py-2 px-5 text-lg font-bold text-[#9EC8B9] resume-lin"
-                >
-                  Resume&#8594;
-                </button>
+                <NavLink to="/resume" smooth={true} duration={500}>
+                  <button
+                    className=" py-2 px-5 text-lg font-bold text-[#9EC8B9] resume-lin"
+                  >
+                    Resume&#8594;
+                  </button>
+                </NavLink>
               </div>
-
               <div className="social-links w-fit mt-5 p-3 rounded-2xl">
                 <div className="flex relative ">
                   <a href="https://www.linkedin.com/in/odedara-ranjeet-2a3549262/" target="_blank" rel="noopener noreferrer">
                     <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
-                      <img src={linkedin} alt="linkedin" />
+                      <img src={linkedin} alt="linkedin"  loading='lazy'/>
                     </div>
                   </a>
                   <a href="https://github.com/Ranjeet0062" target="_blank" rel="noopener noreferrer">
                     <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
-                      <img src={github} alt="github" />
+                      <img src={github} alt="github"  loading='lazy'/>
                     </div>
                   </a>
                   <a href="https://www.instagram.com/ranjeet_62.0/" target="_blank" rel="noopener noreferrer">
                     <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
-                      <img src={insta} alt="insta" />
+                      <img src={insta} alt="insta" loading='lazy'/>
                     </div>
                   </a>
                   <a href="mailto:odedararanjeet1361@gmail.com" target="_blank" rel="noopener noreferrer">
                     <div className=" p-2 bg-white rounded-2xl mx-2 shadow-xl social-logos">
-                      <img src={email} alt="email" />
+                      <img src={email} alt="email" loading='lazy'/>
                     </div>
                   </a>
                 </div>
@@ -100,7 +102,7 @@ const AboutMe = () => {
           </div>
           <div className="wraper md:mt-0 mt-9">
             <div className="cantainer">
-              <img src={ranjeet} alt="" />
+              <img src={ranjeet} alt="" loading='lazy'/>
             </div>
           </div>
         </div>
