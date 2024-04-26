@@ -2,6 +2,7 @@ import "./projects.css";
 import { useEffect, useState } from "react";
 import github from "./assets/github.svg";
 import link from "./assets/link.svg";
+import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Project = ({ project, index }) => {
   const images = project.images;
@@ -45,16 +46,7 @@ const Project = ({ project, index }) => {
             return <img className="md:projectSkill w-[20px]"  src={item} key={item} alt="" />
 
           })}
-          {/* <img className="projectSkill" src="./images/stack/HTML.png" alt="" />
-          <img className="projectSkill" src="./images/stack/CSS.png" alt="" />
-          <img className="projectSkill" src="./images/stack/Javascript.svg" alt="" />
-          <img className="projectSkill" src="./images/stack/Express.png" alt="" />
-          <img className="projectSkill" src="./images/stack/NextJsCircle.png" alt="" />
-          <img className="projectSkill" src="./images/stack/Tailwind.png" alt="" />
-          <img className="projectSkill" src="./images/stack/NodeJs.svg" alt="" />
-          <img className="projectSkill" src="./images/stack/MongoDB.svg" alt="" />
-          <img className="projectSkill" src="./images/stack/Redux.svg" alt="" />
-          <img className="projectSkill" src="./images/stack/Vercel.svg" alt="" /> */}
+          
         </div>
         <h2 className="md:projectHeading font-bold text-3xl">{title}</h2>
         <p className="md:projectSubHeading text-[10px] font-style: italic font-semibold">
@@ -63,10 +55,12 @@ const Project = ({ project, index }) => {
         <div className="btnGroup">
           <button className="btn btnProject">Read More</button>
           <Link to={live}>
-            <i title="GitHubLink" className="fa-brands fa-github icon"></i>
+            {/* <i title="GitHubLink" className="fa-brands fa-github icon"></i> */}
+            
           </Link>
           <Link to={code}>
-            <i title="Live Link" className="fa-solid fa-link icon"></i>
+            {/* <i title="Live Link" className="fa-solid fa-link icon"></i> */}
+            <FaGithub/>
           </Link>
         </div>
       </div>
