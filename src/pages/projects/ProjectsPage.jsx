@@ -6,10 +6,10 @@ import insta from "./assets/insta.png";
 import insta_sm from "./assets/insta_sm.png";
 import growmore from "./assets/stack/growmore.png";
 import growmore_sm from "./assets/stack/growmore_sm.png";
-import news from "./assets/news.png";
-import news_sm from "./assets/news_sm.png";
-import otw from "./assets/otw.png";
-import otw_sm from "./assets/otw_sm.png";
+import news from "./assets/weatherApp.png";
+import news_sm from "./assets/weatherApp_sm.png";
+import otw from "./assets/Sanke.png";
+import otw_sm from "./assets/Sanke_sm.png";
 import "../../fonts/Font.css";
 import bash from "./assets/stack/Bash.svg"
 import bootstrap from "./assets/stack/Bootstrap.svg"
@@ -51,22 +51,22 @@ const projectsData = [
     live: "https://grow-more-the-leaning-paltform.vercel.app/"
   },
   {
-    techstack: [html, css, bootstrap, tailwind, javascript, react, redux, node, express, mongodb, git, github, vercel],
+    techstack: [html, css, bootstrap, tailwind, javascript, git, github, vercel],
     images: [news, news_sm],
-    title: "News App",
+    title: "Weather APP",
     description:
-      "This is my first project with React.js, In this, I used the news API for fetching current daily news using Axios. And used react-classNamebased components.",
-    code: "https://github.com/jaimin1503/newsapp-main",
-    live: "https://hunt-news.netlify.app",
+      "This is my first project with HTML, CSS and valina JAVASCRIPT, In this, I used the weather API for fetching current daily weather information using fatch API.",
+    code: "https://github.com/Ranjeet0062/WeatherApp",
+    live: "https://weather-app-psi-lac.vercel.app/",
   },
   {
-    techstack: [html, css, bootstrap, tailwind, javascript, react, redux, node, express, mongodb, git, github, vercel],
+    techstack: [html, css, bootstrap, tailwind, javascript, git, github, vercel],
     images: [otw, otw_sm],
-    title: "Open to work",
+    title: "Sanke Game",
     description:
-      "In this project I used react.js, Node.js and MongoDB. In this app you can create a different profile for different roles as a client or as a freelancer.",
-    code: "https://github.com/jaimin1503/opentowork",
-    live: "https://opentowork-jaimin.netlify.app",
+      "In this project I used html, css, tailwind and javascript.In this sanke game i learn how to use and manipulate array. In this app you can play snake game and it is also show score and high-score using localstorage .",
+    code: "https://github.com/Ranjeet0062/Snake_Game",
+    live: "https://snake-game-khaki-kappa.vercel.app/",
   },
 ];
 

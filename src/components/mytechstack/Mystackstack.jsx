@@ -20,7 +20,7 @@ const TechStack = () => {
             <ul>
               <li>Node.js</li>
               <li>Express.js</li>
-             <li>Neext.js</li>
+             <li>Next.js</li>
             </ul>
           </div>
           <div className="bg-gray-800 text-green-300 p-6 rounded-lg shadow-lg border border-dashed border-blue-600 " style={{backgroundColor: ' rgb(33, 33, 61)'}}>

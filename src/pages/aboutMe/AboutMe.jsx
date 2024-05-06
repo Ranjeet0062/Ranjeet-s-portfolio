@@ -20,7 +20,7 @@ const AboutMe = () => {
     "Full-stack Devlopment",
   ];
   return (
-    <div id="about" className=" bg-[#17461]">
+    <div id="about" className=" bg-[#17461] p-4 md:p-0 ">
       <div className=" flex flex-col">
         <div className="heading flex justify-center items-center mt-8">
           <h1 className="text-4xl md:text-5xl font-bold text-center border-b-2 border-white max-w-xl text-[#dce1e0] font-Montserrat">
